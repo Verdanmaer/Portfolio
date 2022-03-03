@@ -1,31 +1,16 @@
-@keyframes fadeOutLeft {
-  0% {
-    transform: translateX(0); }
-  100% {
-    transform: translateX(-100rem); } }
-
-@keyframes fadeInLeft {
-  from {
-    transform: translateX(-100rem); }
-  to {
-    transform: translateX(0); } }
-
-@keyframes fadeOutRight {
-  0% {
-    transform: translateX(0); }
-  100% {
-    transform: translateX(200rem); } }
-
-@keyframes fadeInRight {
-  0% {
-    transform: translateX(200rem); }
-  100% {
-    transform: translateX(0); } }
-
 html {
   font-size: 62.5%;
-  font-family: 'Roboto Mono', 'Ubuntu Mono', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7; }
+
+.heading-primary--main {
+  font-size: 4.8rem;
+  font-weight: 900; }
+
+.heading-primary--sub {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic; }
 
 *,
 *::after,
@@ -34,51 +19,15 @@ html {
   padding: 0;
   box-sizing: border-box; }
 
-html {
-  background-color: #1A1A1D;
-  color: #dadada; }
-
-.container {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20vh 0; }
-
-.navigation {
-  display: flex; }
-  .navigation__btn {
-    background-color: #1A1A1D;
-    color: #9c9c9c;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1rem 3rem; }
-    .navigation__btn:hover, .navigation__btn[data-active] {
-      background-color: #1e1e1e;
-      color: #dadada; }
-
-.page {
-  font-size: 1.4rem;
-  height: 40rem;
-  box-shadow: 0.5rem 1rem 1.8rem 3px black;
-  overflow: hidden; }
-  .page .tag {
-    color: #00bb54; }
-
-.main {
-  height: 100%; }
-
-.sections {
+.header {
   position: relative;
-  height: 100%;
-  background-color: #1e1e1e; }
-
-.section {
-  position: absolute;
-  width: 100%;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  transform: translateX(-100rem);
-  transition: all 1s ease-in-out;
-  transition-delay: 300ms; }
-  .section[data-active] {
-    transform: translateX(0);
-    transition-delay: 0ms; }
+  height: 100vh;
+  background-image: linear-gradient(to left, rgba(37, 37, 37, 0.95), rgba(7, 7, 7, 0.95)), url("/assets/header-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  color: #FFFAF0; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%); }
