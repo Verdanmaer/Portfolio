@@ -1,14 +1,13 @@
 .about {
   width: 70%;
   margin: 0 auto;
-  height: 50rem;
+  min-height: 50rem;
   margin-top: 10rem;
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10rem;
-  font-size: 1.6rem;
 
   &__content {
     flex: 1 1 0;
@@ -27,5 +26,29 @@
       margin-left: 0;
       padding: 2rem;
     }
+  }
+}
+
+.projects {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__heading {
+    flex: 100%;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__preview {
+    flex: 40%;
+  }
+
+  &__about {
+    flex: 60%;
   }
 }

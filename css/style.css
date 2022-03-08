@@ -17,7 +17,8 @@ html {
 
 .paragraph {
   margin-top: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 1.8rem; }
 
 *,
 *::after,
@@ -42,13 +43,12 @@ html {
 .about {
   width: 70%;
   margin: 0 auto;
-  height: 50rem;
+  min-height: 50rem;
   margin-top: 10rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10rem;
-  font-size: 1.6rem; }
+  gap: 10rem; }
   .about__content {
     flex: 1 1 0; }
   .about__technologies {
@@ -60,3 +60,18 @@ html {
       margin: 1rem;
       margin-left: 0;
       padding: 2rem; }
+
+.projects {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 80rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .projects__heading {
+    flex: 100%; }
+  .projects__item {
+    display: flex; }
+  .projects__preview {
+    flex: 40%; }
+  .projects__about {
+    flex: 60%; }
