@@ -12,9 +12,12 @@ html {
   font-weight: 200;
   font-style: italic; }
 
+.heading-secondary {
+  font-size: 3rem; }
+
 .paragraph {
-  margin-top: 1rem;
-  margin-bottom: 3rem; }
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
 
 *,
 *::after,
@@ -39,7 +42,7 @@ html {
 .about {
   width: 70%;
   margin: 0 auto;
-  height: 40rem;
+  height: 50rem;
   margin-top: 10rem;
   display: flex;
   justify-content: space-between;
@@ -50,3 +53,10 @@ html {
     flex: 1 1 0; }
   .about__technologies {
     flex: 1 1 0; }
+  .about .badges {
+    margin-top: 2rem; }
+    .about .badges .badge {
+      font-size: 2rem;
+      margin: 1rem;
+      margin-left: 0;
+      padding: 2rem; }
