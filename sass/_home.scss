@@ -1,8 +1,7 @@
 .about {
   width: 70%;
   margin: 0 auto;
-  min-height: 50rem;
-  margin-top: 10rem;
+  padding: 10rem 0;
 
   display: flex;
   justify-content: space-between;
@@ -30,11 +29,9 @@
 }
 
 .projects {
-  width: 70%;
-  margin: 0 auto;
-  min-height: 80rem;
-  display: flex;
-  flex-wrap: wrap;
+  background-color: $color-primary-light;
+  color: $color-secondary;
+  padding: 10rem 0;
 
   &__heading {
     flex: 100%;
@@ -42,13 +39,23 @@
 
   &__item {
     display: flex;
+    gap: 8rem;
+    padding: 5rem 0;
   }
 
   &__preview {
-    flex: 40%;
+    flex: 20%;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
   }
 
   &__about {
     flex: 60%;
+
+    &:nth-child(odd) {
+      text-align: right;
+    }
   }
 }
