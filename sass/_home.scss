@@ -35,16 +35,26 @@
 
   &__heading {
     flex: 100%;
+    margin-bottom: 5rem;
   }
 
   &__item {
     display: flex;
     gap: 8rem;
     padding: 5rem 0;
+
+    &--1 {
+      text-align: left;
+    }
+
+    &--2 {
+      text-align: right;
+    }
   }
 
   &__preview {
     flex: 20%;
+    transform: rotate(-2deg);
     img {
       object-fit: cover;
       width: 100%;
@@ -53,9 +63,18 @@
 
   &__about {
     flex: 60%;
+  }
 
-    &:nth-child(odd) {
-      text-align: right;
+  &__buttons {
+    margin: 2rem;
+
+    &--1 {
+      float: right;
+    }
+
+    &--2 {
+      float: left;
     }
   }
+
 }

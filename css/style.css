@@ -72,17 +72,27 @@ html {
   color: #FFFAF0;
   padding: 10rem 0; }
   .projects__heading {
-    flex: 100%; }
+    flex: 100%;
+    margin-bottom: 5rem; }
   .projects__item {
     display: flex;
     gap: 8rem;
     padding: 5rem 0; }
+    .projects__item--1 {
+      text-align: left; }
+    .projects__item--2 {
+      text-align: right; }
   .projects__preview {
-    flex: 20%; }
+    flex: 20%;
+    transform: rotate(-2deg); }
     .projects__preview img {
       object-fit: cover;
       width: 100%; }
   .projects__about {
     flex: 60%; }
-    .projects__about:nth-child(odd) {
-      text-align: right; }
+  .projects__buttons {
+    margin: 2rem; }
+    .projects__buttons--1 {
+      float: right; }
+    .projects__buttons--2 {
+      float: left; }
