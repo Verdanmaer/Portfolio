@@ -2,11 +2,11 @@
   width: 70%;
   margin: 0 auto;
   padding: 10rem 0;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10rem;
+  color: $color-text-primary;
 
   &__content {
     flex: 1 1 0;
