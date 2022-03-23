@@ -46,6 +46,12 @@ html {
     top: 50%;
     left: 30%; }
 
+.footer {
+  padding: 2rem 0;
+  background: black;
+  color: #FFFAF0;
+  text-align: right; }
+
 .about {
   padding: 18rem 0;
   background-color: #f8f8f8;
