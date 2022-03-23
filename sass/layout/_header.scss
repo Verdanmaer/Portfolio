@@ -10,12 +10,11 @@
   
   background-size: cover;
   background-position: top;
-  color: $color-secondary;
+  color: $color-secondary-light;
 
   &__text-box {
-    position: absolute;
+    padding-top: 60vh;
     top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    left: 30%;
   }
 }

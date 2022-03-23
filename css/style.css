@@ -3,24 +3,25 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7; }
 
-.heading-primary--main {
-  font-size: 4.8rem;
-  font-weight: 900; }
-
-.heading-primary--sub {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic; }
+.heading-primary {
+  color: #FFFAF0; }
+  .heading-primary--main {
+    font-size: 4.8rem;
+    font-weight: 900; }
+  .heading-primary--sub {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic; }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 3.2rem;
   transform: rotate(-2deg); }
 
 .paragraph {
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   font-size: 1.8rem;
-  line-height: 150%; }
+  line-height: 200%; }
 
 *,
 *::after,
@@ -39,36 +40,36 @@ html {
   background-image: linear-gradient(to left, rgba(37, 37, 37, 0.95), rgba(7, 7, 7, 0.95)), url("/assets/header-bg.jpg");
   background-size: cover;
   background-position: top;
-  color: #FFFAF0; }
+  color: #f8f8f8; }
   .header__text-box {
-    position: absolute;
+    padding-top: 60vh;
     top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%); }
+    left: 30%; }
 
 .about {
-  width: 70%;
-  margin: 0 auto;
-  padding: 10rem 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10rem;
+  padding: 18rem 0;
+  background-color: #f8f8f8;
   color: #373D3F; }
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem; }
   .about__content {
     flex: 1 1 0; }
   .about__technologies {
     flex: 1 1 0; }
   .about .badges {
-    margin-top: 2rem; }
+    margin-top: 5rem; }
     .about .badges .badge {
-      font-size: 2rem;
       margin: 1rem;
       margin-left: 0;
-      padding: 2rem; }
+      padding: 2rem;
+      background-color: #e7e7e7;
+      color: #373D3F;
+      font-size: 1.4rem; }
 
 .projects {
-  background-color: #252525;
+  background-image: linear-gradient(to left, rgba(37, 37, 37, 0.95), rgba(7, 7, 7, 0.95));
   color: #FFFAF0;
   padding: 10rem 0; }
   .projects__heading {
@@ -91,7 +92,11 @@ html {
   .projects__about {
     flex: 60%; }
   .projects__buttons {
-    margin: 2rem; }
+    margin: 3rem; }
+    .projects__buttons button {
+      width: 10rem;
+      font-size: 2rem;
+      margin: 0 1rem; }
     .projects__buttons--1 {
       float: right; }
     .projects__buttons--2 {

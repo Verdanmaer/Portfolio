@@ -1,11 +1,11 @@
 .about {
-  width: 70%;
-  margin: 0 auto;
-  padding: 10rem 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  padding: 18rem 0;
+  background-color: $color-secondary-light;
   color: $color-text-primary;
 
   &__content {
@@ -17,20 +17,25 @@
   }
 
   .badges {
-    margin-top: 2rem;
+    margin-top: 5rem;
     
     .badge {
-      font-size: 2rem;
       margin: 1rem;
       margin-left: 0;
       padding: 2rem;
+      background-color: $color-secondary-dark;
+      color: $color-text-primary;
+      font-size: 1.4rem;
     }
   }
 }
 
 .projects {
-  background-color: $color-primary-light;
-  color: $color-secondary;
+  background-image: linear-gradient(
+        to left,
+        rgba($color-primary-light, 0.95),
+        rgba($color-primary-dark, 0.95));
+  color: $color-text-secondary;
   padding: 10rem 0;
 
   &__heading {
@@ -66,7 +71,13 @@
   }
 
   &__buttons {
-    margin: 2rem;
+    margin: 3rem;
+    
+    button {
+      width: 10rem;
+      font-size: 2rem;
+      margin: 0 1rem;
+    }
 
     &--1 {
       float: right;
