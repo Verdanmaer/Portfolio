@@ -1,6 +1,7 @@
 .about {
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10rem;
   }
@@ -18,51 +19,73 @@
 
   .badges {
     margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
     
     .badge {
-      margin: 1rem;
+      flex-grow: 2;
+      margin: 1.5rem;
       margin-left: 0;
-      padding: 2rem;
+      padding: 2rem 2.2rem;
       background-color: $color-secondary-dark;
       color: $color-text-primary;
       font-size: 1.4rem;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
 
 .projects {
-  background-image: linear-gradient(
-        to left,
-        rgba($color-primary-light, 0.95),
-        rgba($color-primary-dark, 0.95));
+  background-color: $color-primary-dark;
   color: $color-text-secondary;
   padding: 10rem 0;
 
   &__heading {
-    flex: 100%;
     margin-bottom: 5rem;
   }
 
   &__item {
     display: flex;
+    flex-wrap: wrap;
     gap: 8rem;
-    padding: 5rem 0;
+    min-height: 35rem;
+    margin: 10rem 0;
+    padding: 5rem 1rem;
+    border-radius: 1rem;
 
     &--1 {
       text-align: left;
+      background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
     }
 
     &--2 {
       text-align: right;
+      background-image: linear-gradient(to left, $color-primary-dark, $color-primary-light);
     }
   }
 
   &__preview {
     flex: 20%;
     transform: rotate(-2deg);
+
     img {
-      object-fit: cover;
       width: 100%;
+    }
+
+    &--1 {
+      img {
+        box-shadow: -2rem -2rem 1rem 1rem black;
+      }
+    }
+
+    &--2 {
+      img {
+        box-shadow: 2rem 2rem 1rem 1rem black;
+      }
     }
   }
 
@@ -87,5 +110,16 @@
       float: left;
     }
   }
+
+  // just a test
+  // @media (max-width: 1024px) {
+  //   .projects__preview {
+  //     flex: 100%;
+  //   }
+
+  //   .projects__about {
+  //     order: 1;
+  //   }
+  // }
 
 }

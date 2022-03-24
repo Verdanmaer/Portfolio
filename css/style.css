@@ -6,16 +6,21 @@ html {
 .heading-primary {
   color: #FFFAF0; }
   .heading-primary--main {
-    font-size: 4.8rem;
+    font-size: 5rem;
     font-weight: 900; }
   .heading-primary--sub {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 200;
     font-style: italic; }
 
 .heading-secondary {
   font-size: 3.2rem;
+  font-weight: 200;
   transform: rotate(-2deg); }
+
+.heading-tertiary {
+  font-size: 2.6rem;
+  font-weight: 200; }
 
 .paragraph {
   margin-top: 5rem;
@@ -37,7 +42,7 @@ html {
 .header {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to left, rgba(37, 37, 37, 0.95), rgba(7, 7, 7, 0.95)), url("/assets/header-bg.jpg");
+  background-image: linear-gradient(to left, rgba(44, 50, 57, 0.95), rgba(13, 17, 23, 0.95)), url("/assets/header-bg.jpg");
   background-size: cover;
   background-position: top;
   color: #f8f8f8; }
@@ -58,6 +63,7 @@ html {
   color: #373D3F; }
   .about .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10rem; }
   .about__content {
@@ -65,36 +71,50 @@ html {
   .about__technologies {
     flex: 1 1 0; }
   .about .badges {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap; }
     .about .badges .badge {
-      margin: 1rem;
+      flex-grow: 2;
+      margin: 1.5rem;
       margin-left: 0;
-      padding: 2rem;
+      padding: 2rem 2.2rem;
       background-color: #e7e7e7;
       color: #373D3F;
       font-size: 1.4rem; }
+    .about .badges .icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem; }
 
 .projects {
-  background-image: linear-gradient(to left, rgba(37, 37, 37, 0.95), rgba(7, 7, 7, 0.95));
+  background-color: #0D1117;
   color: #FFFAF0;
   padding: 10rem 0; }
   .projects__heading {
-    flex: 100%;
     margin-bottom: 5rem; }
   .projects__item {
     display: flex;
+    flex-wrap: wrap;
     gap: 8rem;
-    padding: 5rem 0; }
+    min-height: 35rem;
+    margin: 10rem 0;
+    padding: 5rem 1rem;
+    border-radius: 1rem; }
     .projects__item--1 {
-      text-align: left; }
+      text-align: left;
+      background-image: linear-gradient(to right, #0D1117, #2C3239); }
     .projects__item--2 {
-      text-align: right; }
+      text-align: right;
+      background-image: linear-gradient(to left, #0D1117, #2C3239); }
   .projects__preview {
     flex: 20%;
     transform: rotate(-2deg); }
     .projects__preview img {
-      object-fit: cover;
       width: 100%; }
+    .projects__preview--1 img {
+      box-shadow: -2rem -2rem 1rem 1rem black; }
+    .projects__preview--2 img {
+      box-shadow: 2rem 2rem 1rem 1rem black; }
   .projects__about {
     flex: 60%; }
   .projects__buttons {
