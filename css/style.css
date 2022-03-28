@@ -76,12 +76,14 @@ html {
     flex-wrap: wrap; }
     .about .badges .badge {
       flex-grow: 2;
-      margin: 1.5rem;
+      margin: 2.5rem;
       margin-left: 0;
       padding: 2rem 2.2rem;
       background-color: #e7e7e7;
       color: #373D3F;
       font-size: 1.4rem; }
+      .about .badges .badge:hover {
+        transform: scale(1.1); }
     .about .badges .icon {
       font-size: 4rem;
       margin-bottom: 1.5rem; }
@@ -107,22 +109,32 @@ html {
       text-align: right;
       background-image: linear-gradient(to left, #0D1117, #2C3239); }
   .projects__preview {
-    flex: 20%;
-    transform: rotate(-2deg); }
+    flex: 20%; }
     .projects__preview img {
-      width: 100%; }
+      width: 100%;
+      transform: rotate(-2deg); }
     .projects__preview--1 img {
       box-shadow: -2rem -2rem 1rem 1rem black; }
     .projects__preview--2 img {
       box-shadow: 2rem 2rem 1rem 1rem black; }
+    .projects__preview:hover img {
+      transition: all .2s;
+      transform: rotate(0deg);
+      transform: scale(1.2);
+      box-shadow: none; }
   .projects__about {
     flex: 60%; }
   .projects__buttons {
     margin: 3rem; }
     .projects__buttons button {
       width: 10rem;
-      font-size: 2rem;
-      margin: 0 1rem; }
+      margin: 0 1rem;
+      background-color: #f8f8f8;
+      color: #373D3F;
+      font-size: 2rem; }
+      .projects__buttons button:hover {
+        transition: all .2s;
+        transform: scale(1.1); }
     .projects__buttons--1 {
       float: right; }
     .projects__buttons--2 {

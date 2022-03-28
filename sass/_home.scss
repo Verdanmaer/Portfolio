@@ -24,12 +24,16 @@
     
     .badge {
       flex-grow: 2;
-      margin: 1.5rem;
+      margin: 2.5rem;
       margin-left: 0;
       padding: 2rem 2.2rem;
       background-color: $color-secondary-dark;
       color: $color-text-primary;
       font-size: 1.4rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .icon {
@@ -70,10 +74,10 @@
 
   &__preview {
     flex: 20%;
-    transform: rotate(-2deg);
 
     img {
       width: 100%;
+      transform: rotate(-2deg);
     }
 
     &--1 {
@@ -87,6 +91,16 @@
         box-shadow: 2rem 2rem 1rem 1rem black;
       }
     }
+
+    &:hover {
+      img {
+        transition: all .2s;
+        transform: rotate(0deg);
+        transform: scale(1.2);
+        box-shadow: none;
+        
+      }
+    }
   }
 
   &__about {
@@ -98,8 +112,15 @@
     
     button {
       width: 10rem;
-      font-size: 2rem;
       margin: 0 1rem;
+      background-color: $color-secondary-light;
+      color: $color-text-primary;
+      font-size: 2rem;
+
+      &:hover {
+        transition: all .2s;
+        transform: scale(1.1);
+      }
     }
 
     &--1 {
