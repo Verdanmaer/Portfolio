@@ -39,10 +39,27 @@ html {
   width: 70%;
   margin: 0 auto; }
 
+.navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1.2rem 0;
+  background-color: #3f3d56;
+  color: #FFFAF0;
+  font-size: 2.5rem; }
+  .navigation__list {
+    float: right;
+    list-style-type: none; }
+  .navigation__item {
+    display: inline;
+    padding: 0 2rem; }
+
 .header {
   position: relative;
   height: 100vh;
-  background-color: #0D1117;
+  background-image: linear-gradient(to right, rgba(13, 17, 23, 0.9), rgba(63, 61, 86, 0.9)), url("../../assets/autumn-studio-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
   color: #f8f8f8; }
   .header__text-box {
     padding-top: 30vh;
@@ -54,6 +71,11 @@ html {
     right: 20%;
     font-size: 8rem; }
 
+.section-divider {
+  width: 100%;
+  height: .8rem;
+  background-color: #b9b9b9; }
+
 .footer {
   padding: 2rem 0;
   background: black;
@@ -63,16 +85,24 @@ html {
 .about {
   padding: 18rem 0;
   background-color: #f8f8f8;
-  color: #373D3F; }
+  color: #3f3d56; }
   .about .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10rem; }
+    align-items: center;
+    gap: 10%;
+    row-gap: 10rem; }
   .about__content {
-    flex: 1 1 0; }
+    flex: 50%; }
+  .about__illustration {
+    flex: 40%;
+    align-items: center; }
+    .about__illustration img {
+      width: 100%;
+      height: auto; }
   .about__technologies {
-    flex: 1 1 0; }
+    flex: 50%; }
   .about .badges {
     margin-top: 5rem;
     display: flex;
@@ -84,7 +114,7 @@ html {
       padding: 2rem 2.2rem;
       background-color: #e7e7e7;
       opacity: 0.8;
-      color: #373D3F;
+      color: #3f3d56;
       font-size: 1.4rem; }
       .about .badges .badge:hover {
         transition: all .2s;
@@ -95,9 +125,12 @@ html {
       margin-bottom: 1.5rem; }
 
 .projects {
-  background-color: #0D1117;
-  color: #FFFAF0;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  background-image: linear-gradient(to right, rgba(13, 17, 23, 0.9), rgba(63, 61, 86, 0.9)), url("../../assets/autumn-studio-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  background: #f8f8f8;
+  color: #3f3d56; }
   .projects__heading {
     margin-bottom: 5rem; }
   .projects__item {
@@ -107,22 +140,18 @@ html {
     min-height: 35rem;
     margin: 10rem 0;
     padding: 5rem 1rem;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background-color: #f8f8f8; }
     .projects__item--1 {
-      text-align: left;
-      background-image: linear-gradient(to right, #0D1117, #2C3239); }
+      text-align: left; }
     .projects__item--2 {
-      text-align: right;
-      background-image: linear-gradient(to left, #0D1117, #2C3239); }
+      text-align: right; }
   .projects__preview {
     flex: 20%; }
     .projects__preview img {
       width: 100%;
+      height: auto;
       transform: rotate(-2deg); }
-    .projects__preview--1 img {
-      box-shadow: -2rem -2rem 1rem 1rem black; }
-    .projects__preview--2 img {
-      box-shadow: 2rem 2rem 1rem 1rem black; }
     .projects__preview:hover img {
       transition: all .2s;
       transform: rotate(0deg);
@@ -136,7 +165,7 @@ html {
       width: 10rem;
       margin: 0 1rem;
       background-color: #f8f8f8;
-      color: #373D3F;
+      color: #3f3d56;
       font-size: 2rem; }
       .projects__buttons button:hover {
         transition: all .2s;

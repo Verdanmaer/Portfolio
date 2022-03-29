@@ -1,3 +1,4 @@
+@import "./abstracts/mixins";
 @import "./abstracts/variables";
 
 @import "./base/animations";
@@ -6,6 +7,8 @@
 
 @import "./layout/navigation";
 @import "./layout/header";
+@import "./layout/section-divider";
 @import "./layout/footer";
 
-@import "./home";
+@import "./sections/about";
+@import "./sections/projects";
