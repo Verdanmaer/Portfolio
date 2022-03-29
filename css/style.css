@@ -42,14 +42,17 @@ html {
 .header {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to left, rgba(44, 50, 57, 0.95), rgba(13, 17, 23, 0.95)), url("/assets/header-bg.jpg");
-  background-size: cover;
-  background-position: top;
+  background-color: #0D1117;
   color: #f8f8f8; }
   .header__text-box {
-    padding-top: 60vh;
+    padding-top: 30vh;
     top: 50%;
     left: 30%; }
+  .header__scroll {
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    font-size: 8rem; }
 
 .footer {
   padding: 2rem 0;
@@ -80,10 +83,13 @@ html {
       margin-left: 0;
       padding: 2rem 2.2rem;
       background-color: #e7e7e7;
+      opacity: 0.8;
       color: #373D3F;
       font-size: 1.4rem; }
       .about .badges .badge:hover {
-        transform: scale(1.1); }
+        transition: all .2s;
+        transform: scale(1.1);
+        opacity: 1; }
     .about .badges .icon {
       font-size: 4rem;
       margin-bottom: 1.5rem; }
@@ -134,7 +140,7 @@ html {
       font-size: 2rem; }
       .projects__buttons button:hover {
         transition: all .2s;
-        transform: scale(1.1); }
+        transform: translateY(-0.5rem); }
     .projects__buttons--1 {
       float: right; }
     .projects__buttons--2 {

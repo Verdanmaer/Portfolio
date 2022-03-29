@@ -1,20 +1,19 @@
 .header {
   position: relative;
   height: 100vh;
-
-  background-image: linear-gradient(
-        to left,
-        rgba($color-primary-light, 0.95),
-        rgba($color-primary-dark, 0.95)),
-    url('/assets/header-bg.jpg');
-  
-  background-size: cover;
-  background-position: top;
+  background-color: $color-primary-dark;
   color: $color-secondary-light;
 
   &__text-box {
-    padding-top: 60vh;
+    padding-top: 30vh;
     top: 50%;
     left: 30%;
+  }
+
+  &__scroll {
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    font-size: 8rem;
   }
 }
