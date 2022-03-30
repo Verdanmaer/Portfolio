@@ -139,9 +139,9 @@ html {
     gap: 8rem;
     min-height: 35rem;
     margin: 10rem 0;
-    padding: 5rem 1rem;
-    border-radius: 1rem;
-    background-color: #f8f8f8; }
+    padding: 5rem 2rem;
+    border-radius: .5rem;
+    background-color: #e7e7e7; }
     .projects__item--1 {
       text-align: left; }
     .projects__item--2 {
@@ -164,12 +164,13 @@ html {
     .projects__buttons button {
       width: 10rem;
       margin: 0 1rem;
-      background-color: #f8f8f8;
-      color: #3f3d56;
+      background-color: #3f3d56;
+      color: #FFFAF0;
       font-size: 2rem; }
       .projects__buttons button:hover {
         transition: all .2s;
-        transform: translateY(-0.5rem); }
+        transform: translateY(-0.5rem);
+        color: #FFFAF0; }
     .projects__buttons--1 {
       float: right; }
     .projects__buttons--2 {
