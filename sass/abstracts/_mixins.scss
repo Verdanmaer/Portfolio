@@ -1,9 +1,4 @@
-@mixin background {
-  background-image: linear-gradient(
-    to right,
-    rgba($color-primary-dark, 0.9),
-    rgba($color-primary-light, 0.9)),
-    url("../../assets/autumn-studio-unsplash.jpg");
-  background-size: cover;
-  background-position: top;
+@mixin width-container {
+  width: 70%;
+  margin: 0 auto;
 }

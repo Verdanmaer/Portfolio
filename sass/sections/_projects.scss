@@ -1,7 +1,7 @@
 .projects {
+  @include width-container;
+  
   padding: 10rem 0;
-  @include background;
-  background: $color-secondary-light;
   color: $color-text-primary;
 
   &__heading {
@@ -16,7 +16,6 @@
     margin: 10rem 0;
     padding: 5rem 2rem;
     border-radius: .5rem;
-    background-color: $color-secondary-dark;
 
     &--1 {
       text-align: left;

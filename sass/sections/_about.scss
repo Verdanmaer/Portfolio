@@ -1,12 +1,13 @@
 .about {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10%;
-    row-gap: 10rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  row-gap: 10rem;
+
+  @include width-container;
+
   padding: 18rem 0;
   background-color: $color-secondary-light;
   color: $color-text-primary;
@@ -39,7 +40,7 @@
       margin: 2.5rem;
       margin-left: 0;
       padding: 2rem 2.2rem;
-      background-color: $color-secondary-dark;
+      // background-color: $color-secondary-dark;
       opacity: 0.8;
       color: $color-text-primary;
       font-size: 1.4rem;
