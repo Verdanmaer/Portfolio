@@ -35,8 +35,12 @@ html {
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  color: #3f3d56; }
 
 .navigation {
   position: fixed;
@@ -59,8 +63,7 @@ body {
   width: 70%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  color: #3f3d56; }
+  flex-wrap: wrap; }
   .header__text-box {
     flex: 100%;
     padding-right: 20vh;
@@ -78,6 +81,8 @@ body {
     align-self: flex-end;
     font-size: 8rem;
     text-align: right; }
+    .header__scroll a {
+      color: #3f3d56; }
 
 .section-divider {
   width: 100%;
@@ -88,22 +93,18 @@ body {
   width: 70%;
   margin: 0 auto;
   padding: 2rem 0;
-  background: black;
-  color: #FFFAF0;
   text-align: right; }
 
 .about {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 10%;
   row-gap: 10rem;
-  width: 70%;
-  margin: 0 auto;
-  padding: 18rem 0;
-  background-color: #f8f8f8;
-  color: #3f3d56; }
+  padding: 18rem 0; }
   .about__content {
     flex: 50%; }
   .about__illustration {
@@ -137,8 +138,7 @@ body {
 .projects {
   width: 70%;
   margin: 0 auto;
-  padding: 10rem 0;
-  color: #3f3d56; }
+  padding: 10rem 0; }
   .projects__heading {
     margin-bottom: 5rem; }
   .projects__item {
@@ -158,12 +158,13 @@ body {
     .projects__preview img {
       width: 100%;
       height: auto;
-      transform: rotate(-2deg); }
+      transform: rotate(-2deg);
+      filter: grayscale(50%); }
     .projects__preview:hover img {
       transition: all .2s;
       transform: rotate(0deg);
       transform: scale(1.2);
-      box-shadow: none; }
+      filter: none; }
   .projects__about {
     flex: 60%; }
   .projects__buttons {

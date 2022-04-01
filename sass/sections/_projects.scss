@@ -1,8 +1,6 @@
 .projects {
   @include width-container;
-  
   padding: 10rem 0;
-  color: $color-text-primary;
 
   &__heading {
     margin-bottom: 5rem;
@@ -33,6 +31,7 @@
       width: 100%;
       height: auto;
       transform: rotate(-2deg);
+      filter: grayscale(50%);
     }
 
     &:hover {
@@ -40,7 +39,7 @@
         transition: all .2s;
         transform: rotate(0deg);
         transform: scale(1.2);
-        box-shadow: none;
+        filter: none;
       }
     }
   }

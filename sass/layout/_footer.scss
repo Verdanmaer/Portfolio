@@ -1,7 +1,5 @@
 .footer {
   @include width-container;
   padding: 2rem 0;
-  background: black;
-  color: $color-text-secondary;
   text-align: right;
 }
