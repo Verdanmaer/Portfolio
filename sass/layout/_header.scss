@@ -27,9 +27,15 @@
     align-self: flex-end;
     font-size: 8rem;
     text-align: right;
+    cursor: pointer;
     
-    a {
+    i {
       color: $color-text-primary;
+
+      &:hover {
+        transition: all .3s;
+        transform: scale(1.15) translateY(.5rem);
+      }
     }
   }
 }

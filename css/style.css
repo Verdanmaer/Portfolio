@@ -80,9 +80,13 @@ body {
     flex: 10%;
     align-self: flex-end;
     font-size: 8rem;
-    text-align: right; }
-    .header__scroll a {
+    text-align: right;
+    cursor: pointer; }
+    .header__scroll i {
       color: #3f3d56; }
+      .header__scroll i:hover {
+        transition: all .3s;
+        transform: scale(1.15) translateY(0.5rem); }
 
 .section-divider {
   width: 100%;
@@ -159,7 +163,8 @@ body {
       width: 100%;
       height: auto;
       transform: rotate(-2deg);
-      filter: grayscale(50%); }
+      filter: grayscale(50%);
+      cursor: pointer; }
     .projects__preview:hover img {
       transition: all .2s;
       transform: rotate(0deg);
