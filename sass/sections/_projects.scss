@@ -1,5 +1,5 @@
 .projects {
-  @include width-container;
+  @include width-container(70%);
   padding: 10rem 0;
 
   &__heading {
@@ -74,15 +74,31 @@
       float: left;
     }
   }
-  // just a test
-  // @media (max-width: 1024px) {
-  //   .projects__preview {
-  //     flex: 100%;
-  //   }
 
-  //   .projects__about {
-  //     order: 1;
-  //   }
-  // }
+  @media (max-width: 1024px) {
+    @include width-container(90%);
+    padding: 5rem 0;
 
+    &__item {
+      padding-top: 1rem;
+      gap: 2rem;
+    }
+
+    &__preview {
+      flex: 100%;
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+
+    &__about {
+      order: 1;
+    }
+
+    &__buttons {
+      margin: 1rem;
+    }
+  }
 }

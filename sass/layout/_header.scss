@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 100vh;
-  @include width-container;
+  @include width-container(70%);
   display: flex;
   flex-wrap: wrap;
 
@@ -37,6 +37,21 @@
       &:hover {
         transition: all .3s;
         transform: scale(1.15) translateY(.5rem);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    @include width-container(90%);
+
+    &__text-box {
+      padding-right: 1rem;
+      padding-top: 20vh;
+    }
+
+    &__illustration {
+      img {
+        transform: translate(-10rem, -5rem);
       }
     }
   }

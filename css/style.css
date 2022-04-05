@@ -41,6 +41,10 @@ html {
   font-size: 1.8rem;
   line-height: 200%; }
 
+@media (max-width: 1024px) {
+  html {
+    font-size: 70%; } }
+
 *,
 *::after,
 *::before {
@@ -101,6 +105,15 @@ body {
       .header__scroll i:hover {
         transition: all .3s;
         transform: scale(1.15) translateY(0.5rem); }
+  @media (max-width: 1024px) {
+    .header {
+      width: 90%;
+      margin: 0 auto; }
+      .header__text-box {
+        padding-right: 1rem;
+        padding-top: 20vh; }
+      .header__illustration img {
+        transform: translate(-10rem, -5rem); } }
 
 .section-divider {
   width: 100%;
@@ -112,6 +125,8 @@ body {
   margin: 0 auto;
   padding: 2rem 0;
   text-align: right; }
+  .footer a {
+    color: #3f3d56; }
 
 .about {
   width: 70%;
@@ -152,6 +167,16 @@ body {
     .about .badges .icon {
       font-size: 4rem;
       margin-bottom: 1.5rem; }
+  @media (max-width: 1024px) {
+    .about {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10rem 0;
+      row-gap: 5rem; }
+      .about__content {
+        flex: 100%; }
+      .about__illustration {
+        display: none; } }
 
 .projects {
   width: 70%;
@@ -202,3 +227,20 @@ body {
       float: right; }
     .projects__buttons--2 {
       float: left; }
+  @media (max-width: 1024px) {
+    .projects {
+      width: 90%;
+      margin: 0 auto;
+      padding: 5rem 0; }
+      .projects__item {
+        padding-top: 1rem;
+        gap: 2rem; }
+      .projects__preview {
+        flex: 100%; }
+        .projects__preview img {
+          width: 80%;
+          height: auto; }
+      .projects__about {
+        order: 1; }
+      .projects__buttons {
+        margin: 1rem; } }

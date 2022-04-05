@@ -1,5 +1,9 @@
 .footer {
-  @include width-container;
+  @include width-container(70%);
   padding: 2rem 0;
   text-align: right;
+
+  a {
+    color: $color-primary-light;
+  }
 }

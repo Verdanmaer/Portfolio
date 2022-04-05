@@ -1,4 +1,4 @@
-@mixin width-container {
-  width: 70%;
+@mixin width-container($width) {
+  width: $width;
   margin: 0 auto;
 }

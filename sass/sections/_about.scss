@@ -1,5 +1,5 @@
 .about {
-  @include width-container;
+  @include width-container(70%);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,6 +50,20 @@
     .icon {
       font-size: 4rem;
       margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    @include width-container(90%);
+    padding: 10rem 0;
+    row-gap: 5rem;
+  
+    &__content {
+      flex: 100%;
+    }
+
+    &__illustration {
+      display: none;
     }
   }
 }
