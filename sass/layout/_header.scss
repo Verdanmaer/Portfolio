@@ -10,6 +10,8 @@
     padding-right: 20vh;
     padding-top: 20vh;
     text-align: right;
+
+    animation: moveInLeft .5s ease-out;
   }
 
   &__illustration {

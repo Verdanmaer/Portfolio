@@ -1,3 +1,16 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.animate {
+  animation: moveInLeft 1s ease-out; }
+
 html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -68,7 +81,8 @@ body {
     flex: 100%;
     padding-right: 20vh;
     padding-top: 20vh;
-    text-align: right; }
+    text-align: right;
+    animation: moveInLeft .5s ease-out; }
   .header__illustration {
     flex: 60%;
     max-height: 50vh; }
