@@ -213,13 +213,13 @@ body {
     flex: 60%; }
   .projects__buttons {
     margin: 3rem; }
-    .projects__buttons button {
+    .projects__buttons a {
       width: 10rem;
       margin: 0 1rem;
       background-color: #3f3d56;
       color: #FFFAF0;
       font-size: 2rem; }
-      .projects__buttons button:hover {
+      .projects__buttons a:hover {
         transition: all .2s;
         transform: translateY(-0.5rem);
         color: #FFFAF0; }
