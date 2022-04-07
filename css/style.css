@@ -16,15 +16,14 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7; }
 
-.heading-primary {
-  color: #FFFAF0; }
-  .heading-primary--main {
-    font-size: 5rem;
-    font-weight: 900; }
-  .heading-primary--sub {
-    font-size: 3.2rem;
-    font-weight: 200;
-    font-style: italic; }
+.heading-primary--main {
+  font-size: 5rem;
+  font-weight: 900; }
+
+.heading-primary--sub {
+  font-size: 3.2rem;
+  font-weight: 200;
+  font-style: italic; }
 
 .heading-secondary {
   font-size: 3.2rem;
@@ -58,21 +57,6 @@ html {
 body {
   background-color: #f8f8f8;
   color: #3f3d56; }
-
-.navigation {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  padding: 1.2rem 0;
-  background-color: #3f3d56;
-  color: #FFFAF0;
-  font-size: 2.5rem; }
-  .navigation__list {
-    float: right;
-    list-style-type: none; }
-  .navigation__item {
-    display: inline;
-    padding: 0 2rem; }
 
 .header {
   position: relative;
@@ -217,12 +201,12 @@ body {
       width: 10rem;
       margin: 0 1rem;
       background-color: #3f3d56;
-      color: #FFFAF0;
+      color: #f8f8f8;
       font-size: 2rem; }
       .projects__buttons a:hover {
         transition: all .2s;
         transform: translateY(-0.5rem);
-        color: #FFFAF0; }
+        color: #f8f8f8; }
     .projects__buttons--1 {
       float: right; }
     .projects__buttons--2 {
